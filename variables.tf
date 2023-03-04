@@ -14,3 +14,7 @@ variable "TFC_WORKSPACE_SLUG" {
   description = "Terraform Cloud Workspace"
   default     = "Terraform Cloud"
 }
+
+variable "domain" {
+  description = "Domain name"
+}

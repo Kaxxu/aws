@@ -26,12 +26,15 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [aws_acm_certificate.pingwin](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/acm_certificate) | resource |
+| [aws_acm_certificate_validation.pingwin](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/acm_certificate_validation) | resource |
 | [aws_iam_account_password_policy.strict](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_account_password_policy) | resource |
 | [aws_iam_group.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group) | resource |
 | [aws_iam_group_membership.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group_membership) | resource |
 | [aws_iam_group_policy_attachment.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group_policy_attachment) | resource |
 | [aws_iam_user.terraform](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_user) | resource |
 | [aws_route53_record.app](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/route53_record) | resource |
+| [aws_route53_record.pingwin_validation](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/route53_record) | resource |
 | [aws_route53_zone.pingwin](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/route53_zone) | resource |
 
 ## Inputs
@@ -39,6 +42,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_TFC_WORKSPACE_SLUG"></a> [TFC\_WORKSPACE\_SLUG](#input\_TFC\_WORKSPACE\_SLUG) | Terraform Cloud Workspace | `string` | `"Terraform Cloud"` | no |
+| <a name="input_domain"></a> [domain](#input\_domain) | Domain name | `any` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment name | `any` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Project Name | `any` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Region Used | `any` | n/a | yes |

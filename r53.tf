@@ -1,11 +1,11 @@
 resource "aws_route53_zone" "pingwin" {
-  name    = "app.pingw.in"
-  comment = "AWS Hosted zone for pingw.in"
+  name    = var.domain
+  comment = "AWS Hosted zone for ${var.domain}"
 }
 
 resource "aws_route53_record" "app" {
   zone_id = aws_route53_zone.pingwin.zone_id
-  name    = "app.pingw.in"
+  name    = aws_route53_zone.pingwin.name
   type    = "NS"
   ttl     = 172800
 
