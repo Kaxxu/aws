@@ -24,7 +24,7 @@ provider "aws" {
     tags = {
       Name        = var.name
       Environment = var.environment
-      Repo        = "GitHub/aws"
+      Repo        = "GitHub/Kaxxu/aws"
       Workspace   = var.TFC_WORKSPACE_SLUG
     }
   }

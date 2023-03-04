@@ -1,4 +1,9 @@
-# aws
+# AWS
+
+
+# Terraform Documentation
+Terraform resources documentation
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -21,6 +26,11 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [aws_iam_account_password_policy.strict](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_account_password_policy) | resource |
+| [aws_iam_group.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group) | resource |
+| [aws_iam_group_membership.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group_membership) | resource |
+| [aws_iam_group_policy_attachment.service](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_group_policy_attachment) | resource |
+| [aws_iam_user.terraform](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/iam_user) | resource |
 | [aws_route53_record.app](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/route53_record) | resource |
 | [aws_route53_zone.pingwin](https://registry.terraform.io/providers/hashicorp/aws/4.56.0/docs/resources/route53_zone) | resource |
 
